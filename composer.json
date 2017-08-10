@@ -1,0 +1,15 @@
+{
+    "require": {
+        "yiisoft/yii2": "^2.0",
+        "twig/twig": "^2.4",
+        "leeoniya/dump-r": "^2.1"
+    },
+    "autoload" : {
+        "files": [
+        	"common/Files/Helpers.php"
+        ],
+        "classmap": [
+            "common/Libraries"
+        ]
+    }
+}
