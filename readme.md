@@ -11,7 +11,7 @@ Yii2 Application Skeleton
 │   └── Libraries      类库
 ├── composer.json
 ├── composer.lock
-├── config   		   配置文件
+├── config   	       配置文件
 │   ├── console.php
 │   ├── db.php
 │   ├── params.php
