@@ -1,18 +1,11 @@
 <?php
-/**
- * @File Name: BaseController.php
- * @Author: assad
- * @Date:   2017-08-10 15:25:39
- * @Last Modified by:   assad
- * @Last Modified time: 2017-08-11 12:00:23
- * @Email: rlk002@gmail.com
- */
 
-namespace app\controllers;
+namespace app\modules\backend\controllers;
 
 use app\components\BaseController as BController;
+use app\modules\backend\Module;
 
-class BaseController extends BController
+class BbController extends BController
 {
     public $view;
 
@@ -24,9 +17,9 @@ class BaseController extends BController
 
     private function _view()
     {
-        $view_dir = $this->app->params["view"]["view_dir"];
+        $view_dir = $this->module->params["view"]["view_dir"];
         $options = [
-            "cache" => $this->app->params["view"]["view_cache"],
+            "cache" => $this->module->params["view"]["view_cache"],
             "debug" => true,
             "charset" => "UTF-8",
         ];
@@ -35,9 +28,6 @@ class BaseController extends BController
 
     public function beforeAction($action)
     {
-        if (!parent::beforeAction($action)) {
-            return false;
-        }
         return true;
     }
 

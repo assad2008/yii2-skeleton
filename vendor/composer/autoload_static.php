@@ -81,17 +81,12 @@ class ComposerStaticInit4a145ada0ed64275496196a6d7c70657
         ),
     );
 
-    public static $classMap = array (
-        'ViewBase' => __DIR__ . '/../..' . '/common/Libraries/ViewBase.php',
-    );
-
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit4a145ada0ed64275496196a6d7c70657::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit4a145ada0ed64275496196a6d7c70657::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit4a145ada0ed64275496196a6d7c70657::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit4a145ada0ed64275496196a6d7c70657::$classMap;
 
         }, null, ClassLoader::class);
     }

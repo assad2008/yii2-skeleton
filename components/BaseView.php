@@ -1,6 +1,8 @@
 <?php
 
-class ViewBase
+namespace app\components;
+
+class BaseView
 {
 
     protected $loader;

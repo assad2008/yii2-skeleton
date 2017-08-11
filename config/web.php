@@ -4,6 +4,7 @@ $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
 $config = [
+
     'id' => 'YeeYii2',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
@@ -28,16 +29,29 @@ $config = [
                 ],
             ],
         ],
+        'formatter' => [
+            'class' => 'yii\i18n\Formatter',
+            'defaultTimeZone' => 'Asia/Shanghai',
+            'dateFormat' => 'php:Y-m-d',
+            'timeFormat' => 'php:H:i:s',
+            'datetimeFormat' => 'php:Y-m-d H:i:s',
+        ],
         'db' => $db,
         'urlManager' => [
+            'class' => 'yii\web\UrlManager',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            "suffix" => ".html",
+            "suffix" => "",
             'rules' => [
             ],
         ],
     ],
     'params' => $params,
+    'modules' => [
+        'backend' => [
+            'class' => 'app\modules\backend\Module',
+        ],
+    ],
 ];
 
 return $config;
