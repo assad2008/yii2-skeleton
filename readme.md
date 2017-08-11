@@ -3,29 +3,35 @@ Yii2 Application Skeleton
 
 目录结构
 ------------
-```
 ├── commands
 │   └── HelloController.php
-├── common             自定义核心文件
-│   ├── Files          单文件
-│   └── Libraries      类库
+├── common
+│   ├── Files
+│   └── Libraries
+├── components
+│   ├── BaseController.php
+│   └── BaseView.php
 ├── composer.json
 ├── composer.lock
-├── config   	       配置文件
+├── config
 │   ├── console.php
 │   ├── db.php
 │   ├── params.php
 │   └── web.php
-├── controllers        控制器目录
+├── controllers
 │   ├── BaseController.php
 │   └── SiteController.php
-├── models             模型目录
+├── models
 │   └── Posts.php
+├── modules
+│   └── backend
 ├── readme.md
-├── runtime            runtime目录      
+├── runtime
+│   ├── backend
+│   ├── cache
 │   ├── logs
 │   └── views
-├── vendor             composer目录
+├── vendor
 │   ├── autoload.php
 │   ├── bin
 │   ├── bower-asset
@@ -36,9 +42,9 @@ Yii2 Application Skeleton
 │   ├── symfony
 │   ├── twig
 │   └── yiisoft
-├── views              视图目录
-│   └── index.html
-└── web                Web根目录
+├── views
+│   └── site
+└── web
     ├── assets
     ├── favicon.ico
     ├── index.php
