@@ -3,6 +3,7 @@ Yii2 Application Skeleton
 
 目录结构
 ------------
+```
 ├── commands
 │   └── HelloController.php
 ├── common
