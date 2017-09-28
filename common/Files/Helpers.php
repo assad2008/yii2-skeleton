@@ -223,7 +223,7 @@ function cutstr($string, $length, $dot = ' ...')
         for ($i = 0; $i < $length; $i++) {
             if (ord($string[$i]) <= 127) {
                 $strcut .= $string[$i];
-            } else if ($i < $_length) {
+            } elseif ($i < $_length) {
                 $strcut .= $string[$i] . $string[++$i];
             }
         }
