@@ -1,0 +1,151 @@
+2018-07-27 15:52:14 [36.40.37.17][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#1 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /www/wwwroot/yii2-lite.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /www/wwwroot/yii2-lite.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-07-27 15:52:14 [36.40.37.17][-][-][info][application] $_GET = []
+
+$_POST = []
+2018-07-27 15:52:20 [36.40.37.17][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#1 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /www/wwwroot/yii2-lite.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /www/wwwroot/yii2-lite.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-07-27 15:52:20 [36.40.37.17][-][-][info][application] $_GET = []
+
+$_POST = []
+2018-07-27 15:53:04 [36.40.37.17][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#1 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /www/wwwroot/yii2-lite.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /www/wwwroot/yii2-lite.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-07-27 15:53:04 [36.40.37.17][-][-][info][application] $_GET = []
+
+$_POST = []
+2018-07-27 15:56:05 [115.239.212.68][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#1 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /www/wwwroot/yii2-lite.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /www/wwwroot/yii2-lite.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-07-27 15:56:05 [115.239.212.68][-][-][info][application] $_GET = []
+
+$_POST = []
+2018-07-27 15:56:29 [36.40.37.17][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#1 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /www/wwwroot/yii2-lite.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /www/wwwroot/yii2-lite.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-07-27 15:56:29 [36.40.37.17][-][-][info][application] $_GET = []
+
+$_POST = []
+2018-07-27 15:57:00 [36.40.37.17][-][-][error][Error] Error: Class 'Twig_Loader_Filesystem' not found in /www/wwwroot/yii2-lite.yeedev.xyz/components/BaseView.php:14
+Stack trace:
+#0 /www/wwwroot/yii2-lite.yeedev.xyz/controllers/BaseController.php(33): app\components\BaseView->__construct('/www/wwwroot/yi...', Array)
+#1 /www/wwwroot/yii2-lite.yeedev.xyz/controllers/BaseController.php(22): app\controllers\BaseController->_view()
+#2 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/BaseObject.php(109): app\controllers\BaseController->init()
+#3 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Controller.php(86): yii\base\BaseObject->__construct(Array)
+#4 [internal function]: yii\base\Controller->__construct('site', Object(yii\web\Application), Array)
+#5 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#6 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('app\\controllers...', Array, Array)
+#7 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('app\\controllers...', Array)
+#8 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('app\\controllers...', Array)
+#9 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('site')
+#10 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('')
+#11 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#12 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /www/wwwroot/yii2-lite.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2018-07-27 15:57:00 [36.40.37.17][-][-][info][application] $_GET = []
+
+$_POST = []
+2018-07-27 15:58:02 [36.40.37.17][-][-][error][Error] Error: Class 'app\models\Posts' not found in /www/wwwroot/yii2-lite.yeedev.xyz/controllers/SiteController.php:12
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionIndex()
+#1 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#4 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#5 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /www/wwwroot/yii2-lite.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2018-07-27 15:58:02 [36.40.37.17][-][-][info][application] $_GET = []
+
+$_POST = []
+2018-07-27 15:58:19 [36.40.37.17][-][-][error][Twig_Error_Loader] Twig_Error_Loader: Unable to find template "site/index.html" (looked into: /www/wwwroot/yii2-lite.yeedev.xyz/views). in /www/wwwroot/yii2-lite.yeedev.xyz/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('site/index.html')
+#1 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('site/index.html')
+#2 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('site/index.html')
+#3 /www/wwwroot/yii2-lite.yeedev.xyz/components/BaseView.php(76): Twig_Environment->loadTemplate('site/index.html')
+#4 /www/wwwroot/yii2-lite.yeedev.xyz/components/BaseView.php(56): app\components\BaseView->render('site/index.html', NULL)
+#5 /www/wwwroot/yii2-lite.yeedev.xyz/controllers/BaseController.php(49): app\components\BaseView->display('site/index.html')
+#6 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Controller.php(159): app\controllers\BaseController->afterAction('index', NULL)
+#7 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#9 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /www/wwwroot/yii2-lite.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-07-27 15:58:19 [36.40.37.17][-][-][info][application] $_GET = []
+
+$_POST = []
+2018-07-27 16:11:45 [36.40.37.17][-][-][error][Error] Error: Call to undefined function app\controllers\debug() in /www/wwwroot/yii2-lite.yeedev.xyz/controllers/SiteController.php:14
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionIndex()
+#1 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#4 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#5 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /www/wwwroot/yii2-lite.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2018-07-27 16:11:45 [36.40.37.17][-][-][info][application] $_GET = []
+
+$_POST = []
+2018-07-27 16:11:55 [36.40.37.17][-][-][error][Error] Error: Call to undefined function debug() in /www/wwwroot/yii2-lite.yeedev.xyz/controllers/SiteController.php:14
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionIndex()
+#1 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#4 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#5 /www/wwwroot/yii2-lite.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /www/wwwroot/yii2-lite.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2018-07-27 16:11:55 [36.40.37.17][-][-][info][application] $_GET = []
+
+$_POST = []

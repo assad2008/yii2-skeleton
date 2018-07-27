@@ -8,8 +8,8 @@
 namespace yii\db;
 
 use Yii;
+use yii\base\InvalidArgumentException;
 use yii\base\InvalidConfigException;
-use yii\base\InvalidParamException;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Inflector;
 use yii\helpers\StringHelper;
@@ -99,7 +99,7 @@ class ActiveRecord extends BaseActiveRecord
 
 
     /**
-     * Loads default values from database table schema
+     * Loads default values from database table schema.
      *
      * You may call this method to load default values after creating a new instance:
      *
@@ -120,6 +120,7 @@ class ActiveRecord extends BaseActiveRecord
                 $this->{$column->name} = $column->defaultValue;
             }
         }
+
         return $this;
     }
 
@@ -199,8 +200,8 @@ class ActiveRecord extends BaseActiveRecord
      *
      * @param array $condition condition to filter.
      * @return array filtered condition.
-     * @throws InvalidParamException in case array contains unsafe values.
-     * @since 2.0.12.1
+     * @throws InvalidArgumentException in case array contains unsafe values.
+     * @since 2.0.15
      * @internal
      */
     protected static function filterCondition(array $condition)
@@ -208,17 +209,37 @@ class ActiveRecord extends BaseActiveRecord
         $result = [];
         // valid column names are table column names or column names prefixed with table name
         $columnNames = static::getTableSchema()->getColumnNames();
-        $columnNames = array_merge($columnNames, array_map(function($columnName) {
-            return static::tableName() . ".$columnName";
+        $tableName = static::tableName();
+        $columnNames = array_merge($columnNames, array_map(function($columnName) use ($tableName) {
+            return "$tableName.$columnName";
         }, $columnNames));
         foreach ($condition as $key => $value) {
             if (is_string($key) && !in_array($key, $columnNames, true)) {
-                throw new InvalidParamException('Key "' . $key . '" is not a column name and can not be used as a filter');
+                throw new InvalidArgumentException('Key "' . $key . '" is not a column name and can not be used as a filter');
             }
             $result[$key] = is_array($value) ? array_values($value) : $value;
         }
 
         return $result;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function refresh()
+    {
+        $query = static::find();
+        $tableName = key($query->getTablesUsedInFrom());
+        $pk = [];
+        // disambiguate column names in case ActiveQuery adds a JOIN
+        foreach ($this->getPrimaryKey(true) as $key => $value) {
+            $pk[$tableName . '.' . $key] = $value;
+        }
+        $query->where($pk);
+
+        /* @var $record BaseActiveRecord */
+        $record = $query->one();
+        return $this->refreshInternal($record);
     }
 
     /**
@@ -330,7 +351,7 @@ class ActiveRecord extends BaseActiveRecord
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      * @return ActiveQuery the newly created [[ActiveQuery]] instance.
      */
     public static function find()
@@ -430,7 +451,7 @@ class ActiveRecord extends BaseActiveRecord
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public static function populateRecord($record, $row)
     {
@@ -481,7 +502,7 @@ class ActiveRecord extends BaseActiveRecord
      * @param array $attributes list of attributes that need to be saved. Defaults to `null`,
      * meaning all attributes that are loaded from DB will be saved.
      * @return bool whether the attributes are valid and the record is inserted successfully.
-     * @throws \Exception in case insert failed.
+     * @throws \Exception|\Throwable in case insert failed.
      */
     public function insert($runValidation = true, $attributes = null)
     {
@@ -502,6 +523,7 @@ class ActiveRecord extends BaseActiveRecord
             } else {
                 $transaction->commit();
             }
+
             return $result;
         } catch (\Exception $e) {
             $transaction->rollBack();
@@ -590,7 +612,7 @@ class ActiveRecord extends BaseActiveRecord
      * or [[beforeSave()]] stops the updating process.
      * @throws StaleObjectException if [[optimisticLock|optimistic locking]] is enabled and the data
      * being updated is outdated.
-     * @throws \Exception in case update failed.
+     * @throws \Exception|\Throwable in case update failed.
      */
     public function update($runValidation = true, $attributeNames = null)
     {
@@ -611,6 +633,7 @@ class ActiveRecord extends BaseActiveRecord
             } else {
                 $transaction->commit();
             }
+
             return $result;
         } catch (\Exception $e) {
             $transaction->rollBack();
@@ -638,7 +661,7 @@ class ActiveRecord extends BaseActiveRecord
      * Note that it is possible the number of rows deleted is 0, even though the deletion execution is successful.
      * @throws StaleObjectException if [[optimisticLock|optimistic locking]] is enabled and the data
      * being deleted is outdated.
-     * @throws \Exception in case delete failed.
+     * @throws \Exception|\Throwable in case delete failed.
      */
     public function delete()
     {
@@ -654,6 +677,7 @@ class ActiveRecord extends BaseActiveRecord
             } else {
                 $transaction->commit();
             }
+
             return $result;
         } catch (\Exception $e) {
             $transaction->rollBack();
