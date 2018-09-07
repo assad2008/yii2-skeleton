@@ -1,0 +1,56 @@
+2018-09-07 10:54:32 [36.40.45.93][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'cnit_news'@'localhost' (using password: YES) in /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=loca...', 'cnit_news', 'cnit_news', NULL)
+#1 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#6 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#8 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('wp_posts')
+#10 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('wp_posts', 'schema', false)
+#11 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('wp_posts')
+#12 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/ActiveRecord.php(408): yii\db\ActiveRecord::getTableSchema()
+#13 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/ActiveRecord.php(178): yii\db\ActiveRecord::primaryKey()
+#14 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(2)
+#15 /www/wwwroot/yii.yeedev.xyz/controllers/SiteController.php(12): yii\db\BaseActiveRecord::findOne(2)
+#16 [internal function]: app\controllers\SiteController->actionIndex()
+#17 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#20 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#21 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /www/wwwroot/yii.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'cnit_news'@'localhost' (using password: YES) in /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#6 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('wp_posts')
+#8 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('wp_posts', 'schema', false)
+#9 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('wp_posts')
+#10 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/ActiveRecord.php(408): yii\db\ActiveRecord::getTableSchema()
+#11 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/ActiveRecord.php(178): yii\db\ActiveRecord::primaryKey()
+#12 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(2)
+#13 /www/wwwroot/yii.yeedev.xyz/controllers/SiteController.php(12): yii\db\BaseActiveRecord::findOne(2)
+#14 [internal function]: app\controllers\SiteController->actionIndex()
+#15 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#18 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#19 /www/wwwroot/yii.yeedev.xyz/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /www/wwwroot/yii.yeedev.xyz/web/index.php(12): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2018-09-07 10:54:32 [36.40.45.93][-][-][info][application] $_GET = []
+
+$_POST = []
