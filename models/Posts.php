@@ -4,15 +4,15 @@
  * @Author: assad
  * @Date:   2017-08-10 17:02:28
  * @Last Modified by:   assad
- * @Last Modified time: 2017-08-10 17:06:25
+ * @Last Modified time: 2018-09-12 17:35:33
  * @Email: rlk002@gmail.com
  */
 
 namespace app\models;
 
-use yii\db\ActiveRecord;
+use yii\db\ActiveRecord as AR;
 
-class Posts extends ActiveRecord
+class Posts extends AR
 {
     public static function tableName()
     {
