@@ -10,7 +10,7 @@ class SiteController extends BaseController
     public function actionIndex()
     {
         $post = Posts::findOne(2);
-        $hello = "Welcome YeeYii2";
+        $hello = "Welcome Yee-Yii2";
         $this->view->assign("post", $post);
         $this->view->assign("hello", $hello);
     }
