@@ -1,7 +1,7 @@
 {
     "require": {
         "yidas/yii2-composer-bower-skip": "^2.0",
-        "yiisoft/yii2": "2.0.15.1",
+        "yiisoft/yii2": "^2.0",
         "twig/twig": "^2.5",
         "leeoniya/dump-r": "^2.1"
     },
