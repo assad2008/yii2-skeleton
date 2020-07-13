@@ -216,6 +216,13 @@ class Formatter extends Component
      */
     public $decimalSeparator;
     /**
+     * @var string the character displayed as the decimal point when formatting a currency.
+     * If not set, the currency decimal separator corresponding to [[locale]] will be used.
+     * If [PHP intl extension](https://secure.php.net/manual/en/book.intl.php) is not available, setting this property will have no effect.
+     * @since 2.0.35
+     */
+    public $currencyDecimalSeparator;
+    /**
      * @var string the character displayed as the thousands separator (also called grouping separator) character when formatting a number.
      * If not set, the thousand separator corresponding to [[locale]] will be used.
      * If [PHP intl extension](https://secure.php.net/manual/en/book.intl.php) is not available, the default value is ','.
@@ -1656,8 +1663,9 @@ class Formatter extends Component
      * @param array $textOptions optional configuration for the number formatter. This parameter will be merged with [[numberFormatterTextOptions]].
      * @return array [parameters for Yii::t containing formatted number, internal position of size unit]
      * @throws InvalidArgumentException if the input value is not numeric or the formatting failed.
+     * @since 2.0.32
      */
-    private function formatNumber($value, $decimals, $maxPosition, $formatBase, $options, $textOptions)
+    protected function formatNumber($value, $decimals, $maxPosition, $formatBase, $options, $textOptions)
     {
         $value = $this->normalizeNumericValue($value);
 
@@ -1780,6 +1788,9 @@ class Formatter extends Component
         // set symbols
         if ($this->decimalSeparator !== null) {
             $formatter->setSymbol(NumberFormatter::DECIMAL_SEPARATOR_SYMBOL, $this->decimalSeparator);
+        }
+        if ($this->currencyDecimalSeparator !== null) {
+            $formatter->setSymbol(NumberFormatter::MONETARY_SEPARATOR_SYMBOL, $this->currencyDecimalSeparator);
         }
         if ($this->thousandSeparator !== null) {
             $formatter->setSymbol(NumberFormatter::GROUPING_SEPARATOR_SYMBOL, $this->thousandSeparator);

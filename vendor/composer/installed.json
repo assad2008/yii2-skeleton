@@ -69,17 +69,17 @@
     },
     {
         "name": "ezyang/htmlpurifier",
-        "version": "v4.12.0",
-        "version_normalized": "4.12.0.0",
+        "version": "v4.13.0",
+        "version_normalized": "4.13.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/ezyang/htmlpurifier.git",
-            "reference": "a617e55bc62a87eec73bd456d146d134ad716f03"
+            "reference": "08e27c97e4c6ed02f37c5b2b20488046c8d90d75"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/a617e55bc62a87eec73bd456d146d134ad716f03",
-            "reference": "a617e55bc62a87eec73bd456d146d134ad716f03",
+            "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/08e27c97e4c6ed02f37c5b2b20488046c8d90d75",
+            "reference": "08e27c97e4c6ed02f37c5b2b20488046c8d90d75",
             "shasum": "",
             "mirrors": [
                 {
@@ -94,7 +94,7 @@
         "require-dev": {
             "simpletest/simpletest": "dev-master#72de02a7b80c6bb8864ef9bf66d41d2f58f826bd"
         },
-        "time": "2019-10-28T03:44:26+00:00",
+        "time": "2020-06-29T00:56:53+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -103,6 +103,9 @@
             },
             "files": [
                 "library/HTMLPurifier.composer.php"
+            ],
+            "exclude-from-classmap": [
+                "/library/HTMLPurifier/Language/"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -185,17 +188,17 @@
     },
     {
         "name": "symfony/polyfill-ctype",
-        "version": "v1.13.1",
-        "version_normalized": "1.13.1.0",
+        "version": "v1.17.1",
+        "version_normalized": "1.17.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-ctype.git",
-            "reference": "f8f0b461be3385e56d6de3dbb5a0df24c0c275e3"
+            "reference": "2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/f8f0b461be3385e56d6de3dbb5a0df24c0c275e3",
-            "reference": "f8f0b461be3385e56d6de3dbb5a0df24c0c275e3",
+            "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d",
+            "reference": "2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d",
             "shasum": "",
             "mirrors": [
                 {
@@ -210,11 +213,15 @@
         "suggest": {
             "ext-ctype": "For best performance"
         },
-        "time": "2019-11-27T13:56:44+00:00",
+        "time": "2020-06-06T08:46:27+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.13-dev"
+                "dev-master": "1.17-dev"
+            },
+            "thanks": {
+                "name": "symfony/polyfill",
+                "url": "https://github.com/symfony/polyfill"
             }
         },
         "installation-source": "dist",
@@ -251,17 +258,17 @@
     },
     {
         "name": "symfony/polyfill-mbstring",
-        "version": "v1.13.1",
-        "version_normalized": "1.13.1.0",
+        "version": "v1.17.1",
+        "version_normalized": "1.17.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-mbstring.git",
-            "reference": "7b4aab9743c30be783b73de055d24a39cf4b954f"
+            "reference": "7110338d81ce1cbc3e273136e4574663627037a7"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7b4aab9743c30be783b73de055d24a39cf4b954f",
-            "reference": "7b4aab9743c30be783b73de055d24a39cf4b954f",
+            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7110338d81ce1cbc3e273136e4574663627037a7",
+            "reference": "7110338d81ce1cbc3e273136e4574663627037a7",
             "shasum": "",
             "mirrors": [
                 {
@@ -276,11 +283,15 @@
         "suggest": {
             "ext-mbstring": "For best performance"
         },
-        "time": "2019-11-27T14:18:11+00:00",
+        "time": "2020-06-06T08:46:27+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.13-dev"
+                "dev-master": "1.17-dev"
+            },
+            "thanks": {
+                "name": "symfony/polyfill",
+                "url": "https://github.com/symfony/polyfill"
             }
         },
         "installation-source": "dist",
@@ -318,17 +329,17 @@
     },
     {
         "name": "twig/twig",
-        "version": "v2.12.2",
-        "version_normalized": "2.12.2.0",
+        "version": "v2.13.0",
+        "version_normalized": "2.13.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/twigphp/Twig.git",
-            "reference": "d761fd1f1c6b867ae09a7d8119a6d95d06dc44ed"
+            "reference": "46a612ba1bbf6ee1c58acabacd868212ff8a2911"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twigphp/Twig/zipball/d761fd1f1c6b867ae09a7d8119a6d95d06dc44ed",
-            "reference": "d761fd1f1c6b867ae09a7d8119a6d95d06dc44ed",
+            "url": "https://api.github.com/repos/twigphp/Twig/zipball/46a612ba1bbf6ee1c58acabacd868212ff8a2911",
+            "reference": "46a612ba1bbf6ee1c58acabacd868212ff8a2911",
             "shasum": "",
             "mirrors": [
                 {
@@ -338,20 +349,19 @@
             ]
         },
         "require": {
-            "php": "^7.0",
+            "php": ">=7.1.3",
             "symfony/polyfill-ctype": "^1.8",
             "symfony/polyfill-mbstring": "^1.3"
         },
         "require-dev": {
             "psr/container": "^1.0",
-            "symfony/debug": "^3.4|^4.2",
-            "symfony/phpunit-bridge": "^4.4@dev|^5.0"
+            "symfony/phpunit-bridge": "^4.4.9|^5.0.9"
         },
-        "time": "2019-11-11T16:52:09+00:00",
+        "time": "2020-07-05T13:08:05+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.12-dev"
+                "dev-master": "2.13-dev"
             }
         },
         "installation-source": "dist",
@@ -376,7 +386,6 @@
             },
             {
                 "name": "Twig Team",
-                "homepage": "https://twig.symfony.com/contributors",
                 "role": "Contributors"
             },
             {
@@ -437,17 +446,17 @@
     },
     {
         "name": "yiisoft/yii2",
-        "version": "2.0.30",
-        "version_normalized": "2.0.30.0",
+        "version": "2.0.36",
+        "version_normalized": "2.0.36.0",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-framework.git",
-            "reference": "dfeeaf4dbdd23c9cd29b9246921e8a9ca2dbabe4"
+            "reference": "a557111ea6c27794b98c98b76ff3f127eb55f309"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/dfeeaf4dbdd23c9cd29b9246921e8a9ca2dbabe4",
-            "reference": "dfeeaf4dbdd23c9cd29b9246921e8a9ca2dbabe4",
+            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/a557111ea6c27794b98c98b76ff3f127eb55f309",
+            "reference": "a557111ea6c27794b98c98b76ff3f127eb55f309",
             "shasum": "",
             "mirrors": [
                 {
@@ -458,7 +467,7 @@
         },
         "require": {
             "bower-asset/inputmask": "~3.2.2 | ~3.3.5",
-            "bower-asset/jquery": "3.4.*@stable | 3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
+            "bower-asset/jquery": "3.5.*@stable | 3.4.*@stable | 3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
             "bower-asset/punycode": "1.3.*",
             "bower-asset/yii2-pjax": "~2.0.1",
             "cebe/markdown": "~1.0.0 | ~1.1.0 | ~1.2.0",
@@ -469,7 +478,7 @@
             "php": ">=5.4.0",
             "yiisoft/yii2-composer": "~2.0.4"
         },
-        "time": "2019-11-19T21:22:20+00:00",
+        "time": "2020-07-07T21:45:32+00:00",
         "bin": [
             "yii"
         ],
@@ -545,17 +554,17 @@
     },
     {
         "name": "yiisoft/yii2-composer",
-        "version": "2.0.8",
-        "version_normalized": "2.0.8.0",
+        "version": "2.0.10",
+        "version_normalized": "2.0.10.0",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-composer.git",
-            "reference": "5c7ca9836cf80b34db265332a7f2f8438eb469b9"
+            "reference": "94bb3f66e779e2774f8776d6e1bdeab402940510"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/5c7ca9836cf80b34db265332a7f2f8438eb469b9",
-            "reference": "5c7ca9836cf80b34db265332a7f2f8438eb469b9",
+            "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/94bb3f66e779e2774f8776d6e1bdeab402940510",
+            "reference": "94bb3f66e779e2774f8776d6e1bdeab402940510",
             "shasum": "",
             "mirrors": [
                 {
@@ -565,13 +574,13 @@
             ]
         },
         "require": {
-            "composer-plugin-api": "^1.0"
+            "composer-plugin-api": "^1.0 | ^2.0"
         },
         "require-dev": {
-            "composer/composer": "^1.0",
+            "composer/composer": "^1.0 | ^2.0@dev",
             "phpunit/phpunit": "<7"
         },
-        "time": "2019-07-16T13:22:30+00:00",
+        "time": "2020-06-24T00:04:01+00:00",
         "type": "composer-plugin",
         "extra": {
             "class": "yii\\composer\\Plugin",
